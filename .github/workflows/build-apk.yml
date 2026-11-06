@@ -33,9 +33,6 @@ jobs:
           cd mobile
           npm install --legacy-peer-deps
 
-      - name: Setup Android SDK
-        uses: android-actions/setup-android@v3
-
       - name: Make Gradlew Executable
         run: |
           chmod +x mobile/android/gradlew
@@ -44,6 +41,8 @@ jobs:
         run: |
           cd mobile/android
           ./gradlew assembleDebug --no-daemon
+        env:
+          ANDROID_HOME: /usr/local/lib/android/sdk
 
       - name: Rename APK
         run: |
