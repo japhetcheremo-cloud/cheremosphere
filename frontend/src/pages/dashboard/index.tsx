@@ -89,7 +89,7 @@ export default function DashboardPage() {
                 {currentUser?.headline || currentUser?.email}
               </p>
               <div className="flex flex-wrap gap-1.5 mt-2">
-                {currentUser?.active_roles?.map((r, i) => (
+                {currentUser?.active_roles?.map((r: string, i: number) => (
                   <span key={i} className="text-[10px] font-bold px-2 py-0.5 rounded-md bg-white/20 text-white">
                     {r}
                   </span>

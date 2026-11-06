@@ -96,7 +96,7 @@ export default function ChatPage() {
   };
 
   const activeConversation = conversations.find(c => c.id === activeConvId);
-  const otherParticipant = activeConversation?.participants.find(p => p.id !== currentUser?.id);
+  const otherParticipant = activeConversation?.participants.find((p: any) => p.id !== currentUser?.id);
 
   return (
     <Layout title="Messages & Chat — CheremoSphere">
@@ -122,7 +122,7 @@ export default function ChatPage() {
                 </div>
               ) : (
                 conversations.map(c => {
-                  const partner = c.participants.find(p => p.id !== currentUser?.id) || c.participants[0];
+                  const partner = c.participants.find((p: any) => p.id !== currentUser?.id) || c.participants[0];
                   const isSelected = c.id === activeConvId;
 
                   return (

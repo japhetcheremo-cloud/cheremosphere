@@ -242,7 +242,7 @@ export default function NetworkPage() {
                 <div className="pt-3 border-t border-gray-100 space-y-3">
                   {post.comments && post.comments.length > 0 && (
                     <div className="space-y-2">
-                      {post.comments.map(c => (
+                      {post.comments.map((c: any) => (
                         <div key={c.id} className="bg-[#F4F7FB] p-3 rounded-xl text-xs space-y-0.5">
                           <p className="font-bold text-[#0D2A5C]">
                             {c.author.first_name ? `${c.author.first_name} ${c.author.last_name}` : c.author.username}
