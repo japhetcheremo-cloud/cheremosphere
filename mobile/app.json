@@ -1,0 +1,40 @@
+{
+  "expo": {
+    "name": "CheremoSphere",
+    "slug": "cheremosphere",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "scheme": "cheremosphere",
+    "userInterfaceStyle": "light",
+    "splash": {
+      "image": "./assets/splash.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#0D2A5C"
+    },
+    "ios": {
+      "supportsTablet": true,
+      "bundleIdentifier": "com.cheremosphere.app"
+    },
+    "android": {
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/adaptive-icon.png",
+        "backgroundColor": "#0D2A5C"
+      },
+      "package": "com.cheremosphere.app"
+    },
+    "web": {
+      "favicon": "./assets/favicon.png"
+    },
+    "extra": {
+      "owner": "Japhet Cheremo",
+      "company": "CheremoSphere",
+      "office": "Cheremo Plaza, Nairobi Mombasa Road, Kenya",
+      "whatsapp": "+254719678760",
+      "email": "japhetcheremo@gmai.com",
+      "eas": {
+        "projectId": "cheremosphere-enterprise"
+      }
+    }
+  }
+}

@@ -1,0 +1,54 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" fill="none">
+  <defs>
+    <linearGradient id="appBgGrad" x1="0" y1="0" x2="512" y2="512" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#0F3370"/>
+      <stop offset="50%" stop-color="#0D2A5C"/>
+      <stop offset="100%" stop-color="#071836"/>
+    </linearGradient>
+    <linearGradient id="appOrbitGrad" x1="70" y1="390" x2="440" y2="120" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#FF7A00" stop-opacity="0.25"/>
+      <stop offset="50%" stop-color="#FF7A00" stop-opacity="0.9"/>
+      <stop offset="100%" stop-color="#FF7A00"/>
+    </linearGradient>
+    <radialGradient id="appSphereGrad" cx="35%" cy="35%" r="65%">
+      <stop offset="0%" stop-color="#FFB366"/>
+      <stop offset="65%" stop-color="#FF7A00"/>
+      <stop offset="100%" stop-color="#D95C00"/>
+    </radialGradient>
+    <filter id="appSphereGlow" x="-30%" y="-30%" width="160%" height="160%">
+      <feDropShadow dx="0" dy="8" stdDeviation="16" flood-color="#FF7A00" flood-opacity="0.6"/>
+    </filter>
+  </defs>
+
+  <!-- App Icon Background: Sleek Rounded Rect -->
+  <rect width="512" height="512" rx="112" fill="url(#appBgGrad)"/>
+
+  <!-- Symbol scaled and centered (approx 4.2x) -->
+  <g transform="translate(6, 4)">
+    <!-- Back orbit -->
+    <path d="M 95,325 C 70,285 102,192 192,152 C 288,106 380,120 410,160" 
+          stroke="url(#appOrbitGrad)" stroke-width="19" stroke-linecap="round"/>
+
+    <!-- Capital C in White -->
+    <path d="M 345 178 
+             C 320 132, 274 102, 219 102 
+             C 134 102, 75 166, 75 256 
+             C 75 346, 134 410, 219 410 
+             C 278 410, 328 376, 350 325 
+             L 294 308 
+             C 278 338, 248 355, 219 355 
+             C 164 355, 130 308, 130 256 
+             C 130 204, 164 158, 219 158 
+             C 253 158, 283 179, 296 205 
+             Z" 
+          fill="#FFFFFF"/>
+
+    <!-- Front orbit -->
+    <path d="M 410,160 C 440,202 406,296 317,346 C 228,394 126,380 95,325" 
+          stroke="url(#appOrbitGrad)" stroke-width="21" stroke-linecap="round"/>
+
+    <!-- Orange Sphere -->
+    <circle cx="372" cy="195" r="44" fill="url(#appSphereGrad)" filter="url(#appSphereGlow)"/>
+    <circle cx="359" cy="182" r="13" fill="#FFFFFF" fill-opacity="0.75"/>
+  </g>
+</svg>

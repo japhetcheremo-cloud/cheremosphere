@@ -1,0 +1,93 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap');
+@import "tailwindcss";
+
+:root {
+  --primary-navy: #0D2A5C;
+  --primary-navy-dark: #071836;
+  --primary-navy-light: #163D7D;
+  --primary-orange: #FF7A00;
+  --primary-orange-hover: #E66E00;
+  --primary-orange-light: #FFF1E5;
+  --bg-light: #F4F7FB;
+  --text-dark: #24344D;
+  --text-muted: #5B6B82;
+  --border-grey: #E6EBF2;
+  --success-green: #16A34A;
+  --error-red: #DC2626;
+  --font-poppins: 'Poppins', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+}
+
+body {
+  background-color: var(--bg-light);
+  color: var(--text-dark);
+  font-family: var(--font-poppins);
+  margin: 0;
+  padding: 0;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* Custom Utilities for CheremoSphere */
+.bg-navy { background-color: var(--primary-navy); }
+.bg-navy-dark { background-color: var(--primary-navy-dark); }
+.text-navy { color: var(--primary-navy); }
+.border-navy { border-color: var(--primary-navy); }
+
+.bg-orange { background-color: var(--primary-orange); }
+.bg-orange-light { background-color: var(--primary-orange-light); }
+.text-orange { color: var(--primary-orange); }
+.border-orange { border-color: var(--primary-orange); }
+
+.bg-light-surface { background-color: #FFFFFF; }
+.border-surface { border-color: var(--border-grey); }
+
+.btn-primary {
+  background-color: var(--primary-orange);
+  color: #FFFFFF;
+  font-weight: 600;
+  padding: 0.625rem 1.25rem;
+  border-radius: 0.5rem;
+  transition: all 0.2s ease-in-out;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+}
+.btn-primary:hover {
+  background-color: var(--primary-orange-hover);
+  transform: translateY(-1px);
+}
+
+.btn-secondary {
+  background-color: var(--primary-navy);
+  color: #FFFFFF;
+  font-weight: 600;
+  padding: 0.625rem 1.25rem;
+  border-radius: 0.5rem;
+  transition: all 0.2s ease-in-out;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+}
+.btn-secondary:hover {
+  background-color: var(--primary-navy-dark);
+  transform: translateY(-1px);
+}
+
+.btn-outline {
+  border: 1.5px solid var(--border-grey);
+  background-color: #FFFFFF;
+  color: var(--text-dark);
+  font-weight: 600;
+  padding: 0.625rem 1.25rem;
+  border-radius: 0.5rem;
+  transition: all 0.2s ease-in-out;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+}
+.btn-outline:hover {
+  border-color: var(--primary-navy);
+  color: var(--primary-navy);
+}
