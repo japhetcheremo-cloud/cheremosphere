@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="Theme.CheremoSphere" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <item name="colorPrimary">@color/primary</item>
+        <item name="colorPrimaryDark">@color/primary_dark</item>
+        <item name="colorAccent">@color/accent</item>
+        <item name="android:statusBarColor">@color/primary</item>
+        <item name="android:navigationBarColor">@color/primary_dark</item>
+        <item name="android:windowBackground">@color/background</item>
+    </style>
+
+    <style name="Theme.CheremoSphere.Splash" parent="Theme.CheremoSphere">
+        <item name="android:windowBackground">#0D2A5C</item>
+        <item name="android:statusBarColor">#0D2A5C</item>
+        <item name="android:navigationBarColor">#071836</item>
+        <item name="android:windowFullscreen">false</item>
+    </style>
+</resources>
